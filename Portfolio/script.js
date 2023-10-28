@@ -78,8 +78,16 @@ window.onscroll = () => {
 
 //remove toggle icon and navbar when click link
 
-menuIcon = classList.remove('bx-x');
-navbar = classList.remove('active');
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        // Close the menu
+        menuIcon.classList.remove('bx-x');
+        navbar.classList.remove('active');
+    });
+});
+
+// menuIcon = classList.remove('bx-x');
+// navbar = classList.remove('active');
 
 
 
