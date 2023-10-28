@@ -38,7 +38,16 @@
 //         }
 //     });
 // };
-document.addEventListener("DOMContentLoaded", function () {
+
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+
+menuIcon.onclick = () =>{
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+}
+// document.addEventListener("DOMContentLoaded", function () {
     // Your JavaScript code here
 
     let sections = document.querySelectorAll('section');
@@ -64,7 +73,13 @@ window.onscroll = () => {
     });
 };
 
-});
+// });
+
+
+//remove toggle icon and navbar when click link
+
+menuIcon = classList.remove('bx-x');
+navbar = classList.remove('active');
 
 
 
