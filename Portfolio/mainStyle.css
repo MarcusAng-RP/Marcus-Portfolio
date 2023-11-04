@@ -188,7 +188,7 @@
   }
 
   .button {
-  
+    display: inline-block;
     padding: 0.8em 1.7em;
     background-color: transparent;
     border-radius: .3em;
@@ -235,13 +235,26 @@
      
    }
    
-   .button:hover {
+   .button:hover, .button a:hover {
     color: rgb(255, 255, 255);
    }
    
    .button:active {
     filter: brightness(.8);
    }
+
+
+
+   .btn-box-all{
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+   
+    
+  
+  }
+
+
 
    .about{
     background-color: aqua;
@@ -569,7 +582,7 @@
 
    /* container-button styling */
 
-   .container-button {
+   /* .container-button {
   
     padding: 0.8em 1.7em;
     background-color: transparent;
@@ -597,7 +610,7 @@
 
   .container-button:active {
     opacity: 0.7;
-  }
+  } */
   
   /* End of css for portfolio section */
 
