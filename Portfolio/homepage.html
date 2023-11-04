@@ -40,8 +40,10 @@
           </p>
 
           <div class="btn-box">
-            <a href="#about" class="button">About me</a>
-            <a href="#contact" class="button">Contact me</a>
+            <!-- <a href="#about" class="button">About me</a>
+            <a href="#contact" class="button">Contact me</a> -->
+            <button a href="#about" class="button">About me</button>
+            <button a href="#Contact" class="button">Contact me</button>
           </div>
         </div>
       </div>
@@ -74,8 +76,8 @@
           facilis accusamus autem explicabo.
         </p>
 
-        <div class="btn-box btns">
-          <a href="#" class="btn">Read More</a>
+        <div class="read-more-button">
+          <button a href="#" class="button">Read More</button>
         </div>
       </div>
     </section>
@@ -197,7 +199,8 @@
             magni illum dicta accusantium sequi. Reprehenderit mollitia autem
             alias consequuntur deserunt.
           </p>
-          <a href="#" class="container-button">Read More</a>
+          <!-- <a href="#" class="container-button">Read More</a> -->
+          <button a href="#" class="button">Read More</button>
         </div>
         <div class="works-box">
           <i class="bx bxs-palette"></i>
@@ -208,7 +211,8 @@
             magni illum dicta accusantium sequi. Reprehenderit mollitia autem
             alias consequuntur deserunt.
           </p>
-          <a href="#read" class="container-button">Read More</a>
+          <!-- <a href="#read" class="container-button">Read More</a> -->
+          <button a href="#" class="button">Read More</button>
         </div>
         <div class="works-box">
           <i class="bx bxl-unity"></i>
@@ -219,14 +223,103 @@
             magni illum dicta accusantium sequi. Reprehenderit mollitia autem
             alias consequuntur deserunt.
           </p>
-          <a href="#" class="container-button">Read More</a>
+          <!-- <a href="#" class="container-button">Read More</a> -->
+          <button a href="#" class="button">Read More</button>
         </div>
       </div>
     </section>
 
     <!--Contact me section-->
 
-    <section class="contact" id="contact"></section>
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me!</span></h2>
+      <form
+        action="https://formsubmit.co/0d7db17a9e5264125a5522878e8d3aa3"
+        method="POST"
+      >
+        <div class="input-box">
+          <div class="input-field">
+            <input type="text" name="name" placeholder="Full Name" required />
+            <span class="focus"></span>
+          </div>
+          <div class="input-field">
+            <input
+              type="text"
+              name="email"
+              placeholder="Email Address"
+              required
+            />
+            <span class="focus"></span>
+          </div>
+          <div class="input-field">
+            <input
+              type="number"
+              name="mobile"
+              placeholder="Mobile Number"
+              required
+            />
+            <span class="focus"></span>
+          </div>
+
+          <div class="input-field">
+            <input
+              type="text"
+              name="subject"
+              placeholder="Email Subject"
+              required
+            />
+            <span class="focus"></span>
+          </div>
+        </div>
+
+        <div class="textarea-field">
+          <textarea
+            name="message"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <span class="focus"></span>
+        </div>
+
+        <div class="contact-button">
+          <button type="submit" class="button">Submit</button>
+        </div>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-text">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
+          quis.
+
+          <!-- <div class="footer-iconTop">
+            <a href="#"><i class="bx bxs-up-arrow"></i></a>
+          </div>  -->
+        </p>
+
+        <!-- <div class="footer-iconTop">
+          <a href="#"><i class="bx bxs-up-arrow"></i></a>
+        </div> -->
+      </div>
+      <!-- 
+      <div class="footer-iconTop">
+        <a href="#"><i class="bx bxs-up-arrow"></i></a>
+      </div> -->
+
+      <div class="footer-icons">
+        <a href=""><i class="bx bxl-github"></i></a>
+        <a href=""><i class="bx bxl-instagram-alt"></i></a>
+        <a
+          href="https://www.linkedin.com/in/marcus-ang-30ab4b238/"
+          target="_blank"
+          ><i class="bx bxl-linkedin-square"></i
+        ></a>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
