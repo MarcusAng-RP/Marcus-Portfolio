@@ -127,7 +127,7 @@
   .rectangle {
     position: relative; /* Reset the position */
     width: 100%;
-    background-image: url('/images/mountain3.jpg');
+    background-image: url('Marcus-Portfolio/Portfolio/images/mountain3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
