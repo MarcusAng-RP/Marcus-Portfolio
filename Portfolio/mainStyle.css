@@ -127,12 +127,12 @@
   .rectangle {
     position: relative; /* Reset the position */
     width: 100%;
-    background-image: url('images/mountain3.jpg');
+    background-image: url('images/mountain3.jpg'); /*update*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     height: auto; /* Allow the image to scale with the width */
-    z-index: 1; /* Ensure it's above the content */
+    z-index: 1
   }
 
   .home-content {
