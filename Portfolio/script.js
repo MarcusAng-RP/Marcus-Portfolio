@@ -90,6 +90,48 @@ navLinks.forEach(link => {
 // navbar = classList.remove('active');
 
 
+//   const tabs = document.querySelectorAll("[data-target]");
+//   const tabContents = document.querySelectorAll("[data-content]");
+//   const filterButtons = document.querySelectorAll(".filter-button");
+
+// tabs.forEach(tab =>{
+//     tab.addEventListener('click', () =>{
+//         const target = document.querySelector(tab.dataset.target)
+//         tabContents.forEach(tc => {
+//             tc.classList.remove('filter-active')
+            
+//         })
+//         target.classList.add('filter-active')
+        
+//     })
+// })
+const tabs = document.querySelectorAll("[data-target]");
+const tabContents = document.querySelectorAll("[data-content]");
+const filterButtons = document.querySelectorAll(".filter-button");
+
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    // Remove the "active-tab" class from all tab buttons
+    tabs.forEach((t) => {
+      t.classList.remove("active-tab");
+    });
+
+    // Add the "active-tab" class to the clicked tab
+    tab.classList.add("active-tab");
+
+    // Get the target content element
+    const target = document.querySelector(tab.dataset.target);
+
+    // Hide all tab contents
+    tabContents.forEach((tc) => {
+      tc.classList.remove("filter-active");
+    });
+
+    // Show the target tab content
+    target.classList.add("filter-active");
+  });
+});
+
 
 
 

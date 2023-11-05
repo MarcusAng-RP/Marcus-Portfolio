@@ -54,7 +54,7 @@
 
 
   .navbar a:hover, .navbar a.active{
-    color: var(--main-color) ;
+    color: var(--third-bg-color) ;
   } 
 
   #menu-icon{
@@ -215,7 +215,7 @@
     position: absolute;
     border-radius: 50%;
     z-index: -1;
-    background-color: var(--main-color);
+    background-color: var(--third-bg-color);
     transition: 1s ease;
    }
    
@@ -865,3 +865,201 @@
 .footer-icons a i:active {
   opacity: 0.7;
 }
+
+
+.filter-content{
+  margin: 2rem 0 2.5rem;
+  background-color: var(--bg-color);
+  padding: .375rem;
+  border-radius: .75rem;
+  border: solid var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  column-gap: .5rem;
+}
+
+.filter-button{
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  color: var(--second-bg-color);
+  font-size: 1.6rem;
+  font-weight: 500;
+  border-radius: .75rem;
+  cursor: pointer;
+  background-color: transparent;
+  transition: .3s;
+
+}
+
+.filter-button:hover{
+  color: white;
+  background-color: var(--main-color);
+
+}
+
+.active-tab {
+  background-color: var(--main-color); /* Set the desired background color */
+  color: white; /* Change the text color for better visibility */
+}
+.software-content-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* To evenly distribute the cards */
+}
+
+.software-card{
+  position: relative;
+  
+  border-radius: 1rem;
+  overflow: hidden;
+  flex: 1; /* Make the cards take up equal width */
+  margin: 10px; /* Adjust the margin between the cards as needed */
+  max-width: calc(33.33% - 20px); /* Adjust the maximum width of each card */
+  box-sizing: border-box;
+
+
+}
+
+.software-card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ 
+}
+
+.software-modal{
+  position: absolute;
+  
+  width: 100%;
+  height: 100%;
+  bottom: -100%;
+  left: 0;
+  background:  linear-gradient(180deg, hsla(0, 24%, 40%, .3) 0%, 
+  hsla(0, 24%, 4%, 1) 95%) ;
+  display: grid;
+  align-items: flex-end;
+  padding: 1.5rem 1.25rem;
+  transition: .3s;
+}
+
+.software-subtitle, .software-title{
+  color: white;
+
+}
+
+.software-subtitle{
+  font-size: 1.6rem;
+
+}
+
+.software-title{
+  font-size: 2rem;
+  margin-top: .5rem ;
+
+}
+
+.software-button{
+  padding: .5rem;
+}
+
+.software-card:hover .software-modal{
+  bottom: 0;
+}
+
+
+
+
+/* Design tab */
+
+.design-content-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* To evenly distribute the cards */
+}
+
+.design-card{
+  position: relative;
+  
+  border-radius: 1rem;
+  overflow: hidden;
+  /* flex: 1 1 calc(33.33% - 20px);  */
+  margin: 10px; 
+  height: 250px;
+  width: 440px;
+
+  max-width: calc(33.33% - 20px); 
+  box-sizing: border-box;
+
+
+}
+
+.design-card img{
+  width: 100%;
+  height: 100%;
+  object-fit: inherit;
+ 
+}
+
+.design-modal{
+  position: absolute;
+  
+  width: 100%;
+  height: 100%;
+  bottom: -100%;
+  left: 0;
+  background:  linear-gradient(180deg, hsla(0, 24%, 40%, .3) 0%, 
+  hsla(0, 24%, 4%, 1) 95%) ;
+  display: grid;
+  align-items: flex-end;
+  padding: 1.5rem 1.25rem;
+  transition: .3s;
+}
+
+.design-subtitle, .design-title{
+  color: white;
+
+}
+
+.design-subtitle{
+  font-size: 1.6rem;
+
+}
+
+.design-title{
+  font-size: 2rem;
+  margin-top: .5rem ;
+
+}
+
+.design-button{
+  padding: .5rem;
+}
+
+.design-card:hover .design-modal{
+  bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+.filter-sections [data-content]{
+  display: none;
+}
+
+
+
+
+
+.filter-active[data-content]{
+  display: flex;
+}
+

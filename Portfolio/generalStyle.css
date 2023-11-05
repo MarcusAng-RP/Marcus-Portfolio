@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border:none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppin', sans-serif;
+  }
+
+  :root{
+    --bg-color:#ffffff;
+    --second-bg-color: #010101;
+    --third-bg-color:#cb6869;
+    --text-color: #010101;
+    --main-color: #592e6d;
+  }
+
+  .header{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    /* position: fixed; */
+
+    position: sticky;
+    
+    top: 0;
+    width: 100%;
+    /* padding: 2rem 9%; */
+
+    padding: .2rem 9%;
+    /* background: transparent; */
+    background: #ffffff;
+    /* background: rgba(255, 255, 255, 0.7); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    
+
+  }
+
+  nav a {
+    font-size: 1.7rem;
+    color: var(--text-color);
+  
+    font-weight: 600;
+    margin-left:3.5rem;
+    transition: .3s;
+  }
+
+
+  .navbar a:hover, .navbar a.active{
+    color: var(--third-bg-color) ;
+  } 
+
+  #menu-icon{
+    font-size: 3.6rem;
+    color: var(--text-color);
+    cursor: pointer;
+    display: none;
+  }
+
+
+  .logo {
+    width: 170px;
+    cursor: pointer;
+    
+  }
+
+  html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+  }
