@@ -991,7 +991,7 @@
   height: 250px;
   width: 440px;
 
-  max-width: calc(33.33% - 20px); 
+  /* max-width: calc(33.33% - 20px);  */
   box-sizing: border-box;
 
 
@@ -1046,9 +1046,20 @@
 
 
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .design-content-grid {
     grid-template-columns: 1fr;
+  }
+} */
+
+.design-card {
+  display: flex;
+  padding: 1rem;
+  @media(min-width: 40rem) {
+    width: 50%;
+  }
+  @media(min-width: 56rem) {
+    width: 33.3333%;
   }
 }
 
