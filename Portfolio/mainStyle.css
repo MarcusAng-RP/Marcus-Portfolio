@@ -976,8 +976,10 @@
 .design-content-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; /* To evenly distribute the cards */
+  justify-content: space-between; 
 }
+
+
 
 .design-card{
   position: relative;
@@ -1044,6 +1046,13 @@
 
 
 
+@media screen and (max-width: 600px) {
+  .design-content-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 
 
 
@@ -1062,4 +1071,5 @@
 .filter-active[data-content]{
   display: flex;
 }
+
 
