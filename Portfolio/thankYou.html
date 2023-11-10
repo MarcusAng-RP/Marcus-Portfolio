@@ -3,9 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Document</title>
   </head>
+
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80vh;
+      margin: 0;
+    }
+    .ty-content {
+      text-align: center;
+      font-size: 1.7rem;
+      font-family: poppins;
+      padding: 20px;
+      background-color: #f5f5f5; /* Add a background color for the content */
+      border-radius: 10px; /* Add rounded corners */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    i {
+      font-size: 16rem;
+
+      color: rgb(10, 127, 165);
+    }
+
+    .center-icon {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  </style>
   <body>
-    Thank YOU
+    <div class="ty-content">
+      <div class="center-icon">
+        <i class="bx bx-send"></i>
+      </div>
+
+      <p>Thank You! <br />Your response has been recieved</p>
+      <a href="homepage.html" style="font-size: 1.2rem">Back to home</a>
+    </div>
   </body>
 </html>

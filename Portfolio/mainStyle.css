@@ -170,6 +170,7 @@
     font-weight: 700;
     color: transparent;
     -webkit-text-stroke: .7px var(--main-color);
+    margin-bottom: 1.6rem;
   }
   .home-content p{
     font-size: 1.6rem;
@@ -370,12 +371,13 @@
 
    }
 
-   .about-content{
+   .about-content .center-button{
     text-align: center;
    }
 
    .about-content h3{
     font-size: 2.6rem;
+    text-align: center;
    }
 
    .about-content p{
@@ -517,12 +519,25 @@
 
    .education-content .content h3{
     font-size: 2rem;
+    transition: color 0.5s;
    }
+
+   
 
    .education-content .content p{
     font-size: 1.6rem;
     padding-top: .5rem;
+    transition: color 0.5s;
    }
+
+   .education-content .content:hover h3{
+    color: white;
+   }
+
+   .education-content .content:hover p{
+    color: white;
+   }
+ 
 
 
 
