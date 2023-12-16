@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="mainStyle.css" />
+    
     <!-- Bootstrap version from internet -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
      <!-- Bootstrap version from C219 -->
@@ -15,6 +15,8 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="mainStyle.css" />
     
 
     <link rel="icon" type="image/png" href="images/iconlogowhite.png">
@@ -270,7 +272,7 @@
     </section>
 
    
-
+<!-- 
     <section class="filter-container" id="portfolio">
       <h2 class="heading">My <span>Works</span></h2>
       <ul class="filter-content">
@@ -279,12 +281,12 @@
         </button>
 
         <button class="filter-button" data-target="#design">Design</button>
-<!-- 
-        <button class="filter-button" data-target="#unity">Unity</button> -->
-      </ul>
+
+        <button class="filter-button" data-target="#unity">Unity</button>
+      </ul> -->
 
       <!--Filter Section-->
-      <div class="filter-sections">
+      <!-- <div class="filter-sections">
         <div class="software-content-grid filter-active" data-content id="software">
           <article class="software-card">
             <img src="images/website.jpg" alt="" class="project-img" />
@@ -419,247 +421,329 @@
         </div>
 
       </div>
-    </section>
-
-    <!-- <section>
-      
-<ul class="cards">
-  <li class="cards__item">
-    <div class="card">
-      <div class="card__image card__image--fence"></div>
-      <div class="card__content">
-        <div class="card__title">Flex</div>
-        <p class="card__text">This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto. </p>
-        <button class="btn btn--block card__btn">Button</button>
-      </div>
-    </div>
-  </li>
-  <li class="cards__item">
-    <div class="card">
-      <div class="card__image card__image--river"></div>
-      <div class="card__content">
-        <div class="card__title">Flex Grow</div>
-        <p class="card__text">This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.</p>
-        <button class="btn btn--block card__btn">Button</button>
-      </div>
-    </div>
-  </li>
-  <li class="cards__item">
-    <div class="card">
-      <div class="card__image card__image--record"></div>
-      <div class="card__content">
-        <div class="card__title">Flex Shrink</div>
-        <p class="card__text">This defines the ability for a flex item to shrink if necessary. Negative numbers are invalid.</p>
-        <button class="btn btn--block card__btn">Button</button>
-      </div>
-    </div>
-  </li>
-  <li class="cards__item">
-    <div class="card">
-      <div class="card__image card__image--flowers"></div>
-      <div class="card__content">
-        <div class="card__title">Flex Basis</div>
-        <p class="card__text">This defines the default size of an element before the remaining space is distributed. It can be a length (e.g. 20%, 5rem, etc.) or a keyword. The auto keyword means "look at my width or height property."</p>
-        <button class="btn btn--block card__btn">Button</button>
-      </div>
-    </div>
-  </li>
-</ul>
     </section> -->
 
+   
+    <section class="portfolio" id="portfolio">
 
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 courses-card">
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
+      <h2 class="heading">My <span>Works</span></h2>
+      <ul class="filter-content">
+        <button class="filter-button active-tab" data-target="#software">
+          Software Development
+        </button>
+        <button class="filter-button" data-target="#design">Design</button>
+      </ul>
+      <div class="filter-sections">
+        <div class="software-content-grid filter-active" data-content="software" id="software">
+          <div
+                  class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-4 courses-card"
+                >
+                  <div class="col">
+                    <div class="card h-100">
+                      <img
+                        src="images/website.jpg"
+                        class="card-img-top card-img"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Introduction to Python</h5>
+                        <small class="text-muted"
+                          ><i class="far fa-clock" style="padding-right: 5px"></i>2h
+                          30 m</small
+                        >
+        
+                      </div>
+                      <div
+                        class="card-footer d-flex justify-content-between align-items-center"
+                      >
+                        <div class="text-muted d-flex align-items-center">
+                          <i
+                            class="fas fa-user-circle"
+                            style="padding-right: 5px"
+                          ></i>
+                          Hannah Lim
+                        </div>
+                        <div class="text-muted">
+                          <i
+                            class="fas fa-bookmark"
+                            data-bs-toggle="tooltip"
+                            title="Add to Bookmarks"
+                          ></i>
+                          <!-- <i class="fas fa-bookmark"></i> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100">
+                      <img
+                        src="images/app_development.jpg"
+                        class="card-img-top card-img"
+                        alt="..."
+                        stlye="object-fit: "
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Web development with React</h5>
+                        <small class="text-muted"
+                          ><i class="far fa-clock" style="padding-right: 5px"></i>3h
+                          45 m</small
+                        >
+                        <!-- <p class="card-text">Immerse in Japan's artful mastery</p> -->
+                      </div>
+                      <div
+                        class="card-footer d-flex justify-content-between align-items-center"
+                      >
+                        <div class="text-muted d-flex align-items-center">
+                          <i
+                            class="fas fa-user-circle"
+                            style="padding-right: 5px"
+                          ></i>
+                          Jason Lim
+                        </div>
+                        <div class="text-muted">
+                          <i
+                            class="fas fa-bookmark"
+                            data-bs-toggle="tooltip"
+                            title="Add to Bookmarks"
+                          ></i>
+                          <!-- <i class="fas fa-bookmark"></i> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100">
+                      <img
+                        src="images/app.jpg"
+                        class="card-img-top card-img"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">PHP Introduction</h5>
+                        <small class="text-muted"
+                          ><i class="far fa-clock" style="padding-right: 5px"></i>4h
+                          45 m</small
+                        >
+                        <!-- <p class="card-text">Immerse in Japan's artful mastery</p> -->
+                      </div>
+                      <div
+                        class="card-footer d-flex justify-content-between align-items-center"
+                      >
+                        <div class="text-muted d-flex align-items-center">
+                          <i
+                            class="fas fa-user-circle"
+                            style="padding-right: 5px"
+                          ></i>
+                          Annie Ong
+                        </div>
+                        <div class="text-muted">
+                          <i
+                            class="fas fa-bookmark"
+                            data-bs-toggle="tooltip"
+                            title="Add to Bookmarks"
+                          ></i>
+                          <!-- <i class="fas fa-bookmark"></i> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100">
+                      <img
+                        src="images/learningportal.png"
+                        class="card-img-top card-img"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">SOI Learning Portal</h5>
+                        <p>
+                          <small class="text-muted"
+                            ><i class="far fa-clock" style="padding-right: 5px"></i>Web Development</small
+                          >
+                        </p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                      <!-- <div
+                        class="card-footer d-flex justify-content-between align-items-center"
+                      >
+                        <div class="text-muted d-flex align-items-center">
+                          <i
+                            class="fas fa-user-circle"
+                            style="padding-right: 5px"
+                          ></i>
+                          Azhar Kamar
+                        </div>
+                        <div class="text-muted">
+                          <i
+                            class="fas fa-bookmark"
+                            data-bs-toggle="tooltip"
+                            title="Add to Bookmarks"
+                          ></i>
+                          
+                        </div>
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+             
+            
         </div>
-        <div class="card" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
+        <div class="design-content-grid " data-content="design" id="design">
+          <div
+                  class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-4 courses-card"
+                >
+                  <div class="col">
+                    <div class="card h-100">
+                      <img
+                        src="images/rpSticker.jpg"
+                        class="card-img-top card-img"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Telegram Sticker</h5>
+                        <small class="text-muted"
+                          ><i class="far fa-clock" style="padding-right: 5px"></i>2h
+                          30 m</small
+                        >
+        
+                      </div>
+                      <div
+                        class="card-footer d-flex justify-content-between align-items-center"
+                      >
+                        <div class="text-muted d-flex align-items-center">
+                          <i
+                            class="fas fa-user-circle"
+                            style="padding-right: 5px"
+                          ></i>
+                          Hannah Lim
+                        </div>
+                        <div class="text-muted">
+                          <i
+                            class="fas fa-bookmark"
+                            data-bs-toggle="tooltip"
+                            title="Add to Bookmarks"
+                          ></i>
+                          <!-- <i class="fas fa-bookmark"></i> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100">
+                      <img
+                        src="images/typography.jpg"
+                        class="card-img-top card-img"
+                        alt="..."
+                        stlye="object-fit: "
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Web development with React</h5>
+                        <small class="text-muted"
+                          ><i class="far fa-clock" style="padding-right: 5px"></i>3h
+                          45 m</small
+                        >
+                        <!-- <p class="card-text">Immerse in Japan's artful mastery</p> -->
+                      </div>
+                      <div
+                        class="card-footer d-flex justify-content-between align-items-center"
+                      >
+                        <div class="text-muted d-flex align-items-center">
+                          <i
+                            class="fas fa-user-circle"
+                            style="padding-right: 5px"
+                          ></i>
+                          Jason Lim
+                        </div>
+                        <div class="text-muted">
+                          <i
+                            class="fas fa-bookmark"
+                            data-bs-toggle="tooltip"
+                            title="Add to Bookmarks"
+                          ></i>
+                          <!-- <i class="fas fa-bookmark"></i> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100">
+                      <img
+                        src="images/website.jpg"
+                        class="card-img-top card-img"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">PHP Introduction</h5>
+                        <small class="text-muted"
+                          ><i class="far fa-clock" style="padding-right: 5px"></i>4h
+                          45 m</small
+                        >
+                        <!-- <p class="card-text">Immerse in Japan's artful mastery</p> -->
+                      </div>
+                      <div
+                        class="card-footer d-flex justify-content-between align-items-center"
+                      >
+                        <div class="text-muted d-flex align-items-center">
+                          <i
+                            class="fas fa-user-circle"
+                            style="padding-right: 5px"
+                          ></i>
+                          Annie Ong
+                        </div>
+                        <div class="text-muted">
+                          <i
+                            class="fas fa-bookmark"
+                            data-bs-toggle="tooltip"
+                            title="Add to Bookmarks"
+                          ></i>
+                          <!-- <i class="fas fa-bookmark"></i> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100">
+                      <img
+                        src="images/Namecard_back.jpg"
+                        class="card-img-top card-img"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Fundamentals of Java</h5>
+                        <small class="text-muted"
+                          ><i class="far fa-clock" style="padding-right: 5px"></i>2h
+                          45 m</small
+                        >
+                      </div>
+                      <div
+                        class="card-footer d-flex justify-content-between align-items-center"
+                      >
+                        <div class="text-muted d-flex align-items-center">
+                          <i
+                            class="fas fa-user-circle"
+                            style="padding-right: 5px"
+                          ></i>
+                          Azhar Kamar
+                        </div>
+                        <div class="text-muted">
+                          <i
+                            class="fas fa-bookmark"
+                            data-bs-toggle="tooltip"
+                            title="Add to Bookmarks"
+                          ></i>
+                          <!-- <a href="#" data-toggle="tooltip" title="This is a button"
+                            ><i class="fas fa-bookmark"></i
+                          ></a> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+              </div>
+            
         </div>
       </div>
-    </div>
-
-
-    <div
-            class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-4 courses-card"
-          >
-            <div class="col">
-              <div class="card h-100">
-                <img
-                  src="images/rpSticker.jpg"
-                  class="card-img-top card-img"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Introduction to Python</h5>
-                  <small class="text-muted"
-                    ><i class="far fa-clock" style="padding-right: 5px"></i>2h
-                    30 m</small
-                  >
-                  <!-- <p class="card-text">Immerse in Japan's artful mastery</p> -->
-                </div>
-
-                <div
-                  class="card-footer d-flex justify-content-between align-items-center"
-                >
-                  <div class="text-muted d-flex align-items-center">
-                    <i
-                      class="fas fa-user-circle"
-                      style="padding-right: 5px"
-                    ></i>
-                    Hannah Lim
-                  </div>
-                  <div class="text-muted">
-                    <i
-                      class="fas fa-bookmark"
-                      data-bs-toggle="tooltip"
-                      title="Add to Bookmarks"
-                    ></i>
-
-                    <!-- <i class="fas fa-bookmark"></i> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card h-100">
-                <img
-                  src="images/typography.jpg"
-                  class="card-img-top card-img"
-                  alt="..."
-                  stlye="object-fit: "
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Web development with React</h5>
-                  <small class="text-muted"
-                    ><i class="far fa-clock" style="padding-right: 5px"></i>3h
-                    45 m</small
-                  >
-                  <!-- <p class="card-text">Immerse in Japan's artful mastery</p> -->
-                </div>
-
-                <div
-                  class="card-footer d-flex justify-content-between align-items-center"
-                >
-                  <div class="text-muted d-flex align-items-center">
-                    <i
-                      class="fas fa-user-circle"
-                      style="padding-right: 5px"
-                    ></i>
-                    Jason Lim
-                  </div>
-                  <div class="text-muted">
-                    <i
-                      class="fas fa-bookmark"
-                      data-bs-toggle="tooltip"
-                      title="Add to Bookmarks"
-                    ></i>
-
-                    <!-- <i class="fas fa-bookmark"></i> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100">
-                <img
-                  src="images/website.jpg"
-                  class="card-img-top card-img"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">PHP Introduction</h5>
-                  <small class="text-muted"
-                    ><i class="far fa-clock" style="padding-right: 5px"></i>4h
-                    45 m</small
-                  >
-                  <!-- <p class="card-text">Immerse in Japan's artful mastery</p> -->
-                </div>
-
-                <div
-                  class="card-footer d-flex justify-content-between align-items-center"
-                >
-                  <div class="text-muted d-flex align-items-center">
-                    <i
-                      class="fas fa-user-circle"
-                      style="padding-right: 5px"
-                    ></i>
-                    Annie Ong
-                  </div>
-                  <div class="text-muted">
-                    <i
-                      class="fas fa-bookmark"
-                      data-bs-toggle="tooltip"
-                      title="Add to Bookmarks"
-                    ></i>
-
-                    <!-- <i class="fas fa-bookmark"></i> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card h-100">
-                <img
-                  src="images/Namecard_back.jpg"
-                  class="card-img-top card-img"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Fundamentals of Java</h5>
-                  <small class="text-muted"
-                    ><i class="far fa-clock" style="padding-right: 5px"></i>2h
-                    45 m</small
-                  >
-                </div>
-
-                <div
-                  class="card-footer d-flex justify-content-between align-items-center"
-                >
-                  <div class="text-muted d-flex align-items-center">
-                    <i
-                      class="fas fa-user-circle"
-                      style="padding-right: 5px"
-                    ></i>
-                    Azhar Kamar
-                  </div>
-                  <div class="text-muted">
-                    <i
-                      class="fas fa-bookmark"
-                      data-bs-toggle="tooltip"
-                      title="Add to Bookmarks"
-                    ></i>
-
-                    <!-- <a href="#" data-toggle="tooltip" title="This is a button"
-                      ><i class="fas fa-bookmark"></i
-                    ></a> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    </section>
 
     <!--Contact me section-->
 

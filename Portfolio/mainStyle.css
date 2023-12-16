@@ -1142,9 +1142,6 @@
 
 
 
-
-
-
 .filter-sections [data-content]{
   display: none;
 }
@@ -1154,8 +1151,17 @@
 
 
 .filter-active[data-content]{
-  display: flex;
+  display: block;
 }
+
+
+/* .filter-content [data-content] {
+  display: none;
+}
+
+[data-content].filter-active {
+  display: flex;
+} */
 
 
 /* CSS for bootstrap cards */
