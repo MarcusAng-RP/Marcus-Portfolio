@@ -601,7 +601,7 @@
    /* css for portfolio section */
    .portfolio{
     min-height: auto;
-    padding: 3rem;
+    padding: 3rem; 
    }
    .portfolio h2{
     margin-bottom: 5rem;
@@ -650,42 +650,7 @@
    
 
 
-    /* end of css for portfolio page */
-
-   /* container-button styling */
-
-   /* .container-button {
-  
-    padding: 0.8em 1.7em;
-    background-color: transparent;
-    border-radius: .3em;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    transition: .5s;
-    font-weight: 400;
-    font-size: 17px;
-    border: 1px solid;
-    font-family: inherit;
-    text-transform: uppercase;
-    color: var(--main-color);
-    z-index: 1;
-   }
-   
-      
-
-
-   .container-button:hover {
-    background-color: var(--main-color);
-    color: white;
-  }
-
-  .container-button:active {
-    opacity: 0.7;
-  } */
-  
-  /* End of css for portfolio section */
-
+    
 
   /* Responsive menu */
 
