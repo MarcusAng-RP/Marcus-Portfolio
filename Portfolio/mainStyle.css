@@ -86,6 +86,46 @@
     background: var(--bg-color);
     color: var(--text-color);
   }
+
+  
+
+ 
+  .section-with-svg {
+    position: relative;
+    /* Adjust dimensions as needed */
+    width: 100%;
+    height: 500px; /* Example height for the section */
+  }
+  /* SVG styles */
+  .section-with-svg svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: block;
+    background-color: #592e6d;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(102, 14, 83, 0.86),
+      #cc75ef
+    );
+  }
+  .section-with-svg .background-section {
+    fill: #f9c;
+    opacity: 0.5; /* Adjust the opacity as needed */
+  }
+  .welcome-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    z-index: 1;
+  }
  
   .hello_Title {
     text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
@@ -221,14 +261,51 @@
   .home-content .text-animate{
     position: relative;
     width: 32.8rem;
+    
   }
   .home-content .text-animate h3{
     font-size: 3.2rem;
     font-weight: 700;
     color: transparent;
     -webkit-text-stroke: .7px var(--main-color);
+    background-image: linear-gradient(var(--main-color), var(--main-color));
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: homeBgText 6s linear infinite;
+    animation-delay: 2s;
     margin-bottom: 1.6rem;
   }
+
+  .home-content .text-animate h3::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-right: 2px solid var(--main-color);
+    z-index: -1;
+  }
+
+@keyframes homeBgText{
+  0%, 
+  10%, 
+  100%{
+    background-position: -33rem 0;
+
+  }
+  65%, 85%{
+    background-position: 0 0;
+  }
+}
+
+ 
+  
+  
+  
+
+
   .home-content p{
     font-size: 1.6rem;
     margin: 2rem 0 4rem;
@@ -438,7 +515,9 @@
    }
 
    .about-content p{
-    font-size: 1.6rem;
+    display: flex;
+    text-align: justify;
+    font-size: 2rem;
     margin: 2rem 0 3rem;
    }
 
@@ -615,7 +694,19 @@
     gap: 2rem;
 
    }
+   
+   .card-title {
+    font-size: 2rem;
+  }
+  .card-body p{
+    font-size: 1.5rem;
+  }
 
+
+  .btn-purple{
+    background-color:#cb6869;
+    color: #ffffff;
+  }
    .works-container .works-box{
     flex: 1 1 30rem;
     background: var(--bg-color);
@@ -1134,8 +1225,8 @@
   margin-right: 100px;
 } */
 .card-img{
-  object-fit: fill;
-  height: 200px;
+  object-fit: contain;
+  height: 250px;
 }
 /* Test */
 
