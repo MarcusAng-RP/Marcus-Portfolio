@@ -134,5 +134,21 @@ tabs.forEach((tab) => {
 
 
 
+//About me read more
+// function toggleText() {
+//   var moreText = document.getElementById("moreText");
+//   if (moreText.style.display === "none") {
+//     moreText.style.display = "block";
+//   } else {
+//     moreText.style.display = "none";
+//   }
+// }
+
+
+function toggleText() {
+  var moreText = document.getElementById("moreText");
+  moreText.classList.toggle("about_hidden");
+}
+
 
 

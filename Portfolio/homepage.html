@@ -54,9 +54,13 @@
         
         <h1>Hi, I'm <span>Marcus Ang</span></h1>
        
-          <div class="text-animate">
+          <!-- <div class="text-animate">
           <h3>Software Developer</h3>
-          </div>
+          </div> -->
+
+          
+            <h3>Developer | Designer</h3>
+            
           <!-- <p>
             Currently a Year 2 student at Republic Polytechnic pursuing Diploma
             Digital Design and Development.
@@ -106,14 +110,21 @@
 
       <div class="about-content">
         <h3>Software Developer</h3>
-        <p>
+        <p class="main_about">
           I am an enthusiastic student at Republic Polytechnic who is pursuing a diploma in Digital Design and Development My journey 
           in this field has sparked my imagination and piqued my interest in the digital arena, as I investigate the confluence of design and technology to bring ideas to life.
 
           
         </p>
 
-        <p>Outside of my academic pursuits, I find joy in exploring various hobbies that balance my life. Cooking is one of my great passions, allowing me to experiment with various cuisines and produce tasty dishes. It serves as my creative outlet in the kitchen, enabling me to unwind and express myself through food. From experimenting with new recipes to creating delicious meals, cooking has become an integral part of how I relax and showcase my culinary creativity.</p>
+      
+        <p id="moreText" class="about_hidden">
+          Outside of my academic pursuits, I find joy in exploring various hobbies that balance my life. Cooking is one of my great passions, allowing me to experiment with various cuisines and produce tasty dishes. It serves as my creative outlet in the kitchen, enabling me to unwind and express myself through food. From experimenting with new recipes to creating delicious meals, cooking has become an integral part of how I relax and showcase my culinary creativity.
+        </p>
+    
+        <div class="read-more-button">
+          <button onclick="toggleText()" class="button">Read More</button>
+        </div>
 
         <!-- <div class="read-more-button">
           <a href="thankYou.html" class="button">Read More</a>
@@ -494,7 +505,7 @@
                             ><i class="far fa-clock" style="padding-right: 5px"></i>Web Development</small
                           >
                         </p>
-                        <a href="work_learning_portal.html" class="btn btn-purple">Learn More</a>
+                        <a href="work_learning_portal.html" class="button">Learn More</a>
                       </div>
                     
                     </div>

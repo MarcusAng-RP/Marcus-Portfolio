@@ -395,6 +395,8 @@
     background-color: aqua;
    }
 
+
+   
    
 
    /* css for portfolio section */
@@ -514,12 +516,27 @@
     text-align: center;
    }
 
-   .about-content p{
+   .about-content .main_about{
     display: flex;
     text-align: justify;
     font-size: 2rem;
     margin: 2rem 0 3rem;
    }
+
+   #moreText{
+    
+    text-align: justify;
+    font-size: 2rem;
+    margin: 2rem 0 3rem;
+   }
+
+   .about_hidden{
+    display: none;
+   }
+
+   .read-more-button {
+    text-align: center;
+  }
 
    .btn-box.btns{
     display: inline-block;
