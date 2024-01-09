@@ -43,7 +43,7 @@
 
   }
 
-  a {
+  a.button {
     text-decoration: none;
   }
 
@@ -1244,6 +1244,14 @@
 .card-img{
   object-fit: contain;
   height: 250px;
+
+  /* filter: brightness(100%);  */
+  
 }
+
+/* .card-img:hover{
+ opacity: 0.1;
+  
+} */
 /* Test */
 

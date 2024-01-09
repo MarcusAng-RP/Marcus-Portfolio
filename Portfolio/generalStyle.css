@@ -206,4 +206,8 @@
     text-align: left;
     margin: 10px 0;
   }
+
+  .work-image img{
+    height: 100%;
+  }
 }
