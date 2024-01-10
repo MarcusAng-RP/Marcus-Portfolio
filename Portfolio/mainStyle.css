@@ -258,6 +258,12 @@
     font-weight: 700;
     line-height: 1.3;
   }
+
+  .home-content h3{
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+  }
   .home-content .text-animate{
     position: relative;
     width: 32.8rem;
@@ -521,6 +527,13 @@
     text-align: justify;
     font-size: 2rem;
     margin: 2rem 0 3rem;
+   }
+
+   .about-content a.resume{
+    font-size: 1.6rem;
+    color: var(--third-bg-color);
+    display: block;
+    text-align: center;
    }
 
    #moreText{
