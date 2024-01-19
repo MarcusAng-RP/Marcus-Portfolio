@@ -45,25 +45,7 @@ navLinks.forEach(link => {
     });
 });
 
-// menuIcon = classList.remove('bx-x');
-// navbar = classList.remove('active');
 
-
-//   const tabs = document.querySelectorAll("[data-target]");
-//   const tabContents = document.querySelectorAll("[data-content]");
-//   const filterButtons = document.querySelectorAll(".filter-button");
-
-// tabs.forEach(tab =>{
-//     tab.addEventListener('click', () =>{
-//         const target = document.querySelector(tab.dataset.target)
-//         tabContents.forEach(tc => {
-//             tc.classList.remove('filter-active')
-            
-//         })
-//         target.classList.add('filter-active')
-        
-//     })
-// })
 const tabs = document.querySelectorAll("[data-target]");
 const tabContents = document.querySelectorAll("[data-content]");
 const filterButtons = document.querySelectorAll(".filter-button");
@@ -92,16 +74,6 @@ tabs.forEach((tab) => {
 });
 
 
-
-//About me read more
-// function toggleText() {
-//   var moreText = document.getElementById("moreText");
-//   if (moreText.style.display === "none") {
-//     moreText.style.display = "block";
-//   } else {
-//     moreText.style.display = "none";
-//   }
-// }
 
 
 function toggleText() {
